@@ -15,3 +15,5 @@ export const deleteCart = (id: any) => {
         payload: id
     }
 }
+
+const handleButton = () => {}

@@ -40,7 +40,7 @@ const Cart = () => {
     const handleButton = (product: any) => dispatch((product))
 
   return (
-    <div className="row">
+    <div className="row container mx-auto">
         <div className="col-md-4">
             <img src={product.image} alt={product.title} height="200px" width="180px" />
         </div>

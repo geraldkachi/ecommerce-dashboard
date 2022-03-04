@@ -9,6 +9,8 @@ import EcommerceApp from './ecommerce/EcommerceApp';
 import Products from './ecommerce/components/Products';
 import Product from './ecommerce/components/Product';
 import Cart from './ecommerce/components/Cart';
+import About from './ecommerce/components/About';
+import Contact from './ecommerce/components/Contact';
 
 function App() {
   return (
@@ -19,7 +21,9 @@ function App() {
        <Route path="/products" element={<Products />} />
        <Route path="/products/:id" element={<Product />} />
        <Route path="/cart" element={<Cart />} />
+       <Route path="/about" element={<About />} />
        <Route path="*" element={<ErrorPage />} />
+       <Route path="/contact" element={<Contact />} />
      </Routes>
     </div>
   );

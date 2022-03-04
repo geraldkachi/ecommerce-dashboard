@@ -5,7 +5,7 @@ const HomeEcommerce = () => {
   return (
     <div className="hero">
       <div className="card bg-dark text-white">
-        <img src="/assest/bg.jpg" className="card-img" alt="backgroumd" height="550px" />
+        <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" className="card-img" alt="backgroumd" height="550px" width="100x" />
         <div className="card-img-overlay d-flex flex-column justify-content-center">
           <div className="container">
             <h3 className="card-title display-3 fw-bolder mb-0">

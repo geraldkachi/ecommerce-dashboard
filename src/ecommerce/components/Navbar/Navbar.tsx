@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+import Login from '../Login';
 import './nav.css'
 
 const Navbar = () => {
@@ -46,14 +47,15 @@ const Navbar = () => {
 							</li>													
 						</ul>
 						<div className="d-flex buttons">
-							<NavLink to="/login" className="btn btn-outline-dark ms-2">
+							{/* <NavLink to="/login" className="btn btn-outline-dark ms-2">
 								<i className="fa fa-sign-in">Login</i>
-							</NavLink>
+							</NavLink> */}
+							<Login />
 							<NavLink to="/register" className="btn btn-outline-dark ms-2">
-								<i className="fa fa-sign-in">Register</i>
+								<i className="fa fa-sign-in me-2"></i> Register
 							</NavLink>
 							<NavLink to="/cart" className="btn btn-outline-dark ms-2">
-								<i className="fa fa-sign-in">Cart({state.length})</i> 
+								<i className="fa fa-sign-in me-2"></i> Cart({state.length})
 							</NavLink>
 						</div>
 					</div>

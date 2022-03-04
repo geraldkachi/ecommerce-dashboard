@@ -3,6 +3,7 @@ import Skeleton from 'react-loading-skeleton'
 import { useDispatch } from 'react-redux'
 import { NavLink, useParams } from 'react-router-dom'
 import { addCart } from '../redux/actions'
+import Navbar from './Navbar/Navbar'
 
 const Product = () => {
     const [product, setProduct] = useState<any>([])
@@ -62,6 +63,7 @@ const Product = () => {
 
     return (
         <div className="container">
+            <Navbar />
             <div className="row">
                 {loading ? <Loading /> : ShowProducts()}
             </div>
