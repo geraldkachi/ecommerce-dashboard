@@ -8,3 +8,15 @@ export interface CartState {
   const initialState: CartState = {
     cart: [],    
   };
+
+
+
+export const cartSlice = createSlice({
+    name: 'counter',
+    initialState,
+    // The `reducers` field lets us define reducers and generate associated actions
+    reducers: {}    
+  });
+  
+  export const {  } = cartSlice.actions;
+  

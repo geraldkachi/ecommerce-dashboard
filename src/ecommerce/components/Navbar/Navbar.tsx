@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import './nav.css'
 
 const Navbar = () => {
-	const state = useSelector((state: any) => state.handleCart())
+	const state = useSelector((state: any) => state.handleCart)
 
 	return (
 		<div>
