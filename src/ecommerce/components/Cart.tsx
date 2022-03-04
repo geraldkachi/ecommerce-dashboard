@@ -2,6 +2,7 @@ import produce from 'immer'
 import React, { useState, useEffect } from 'react'
 import Skeleton from 'react-loading-skeleton'
 import { useDispatch, useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 import { deleteCart } from '../redux/actions'
 
 const Cart = () => {
@@ -63,10 +64,20 @@ const Cart = () => {
         </div>
     )
 
+    const Button =()=> (
+            <div className="container py-4">
+                <div className="row">
+                    <Link to="/checkout">Process to Checkout</Link>
+                </div>
+            </div>
+    
+    )
+
     return (
         <>
             {state.length === 0 && emptyCart()}
-            {state.length && state.map(cartItems)}
+            {state.length !== 0 && state.map(cartItems)}
+            {state.length !== 0 && Button()}
         </>
     )
 }
