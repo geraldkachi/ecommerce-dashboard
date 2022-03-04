@@ -7,6 +7,7 @@ import { deleteCart } from '../redux/actions'
 
 const Cart = () => {
     const state = useSelector((state: any) => state.handleCart)
+    console.log(state, "statestatestatestatestatestatestatestatestate")
     const dispatch = useDispatch()
 
     // const [product, setProduct] = useState<any>([])

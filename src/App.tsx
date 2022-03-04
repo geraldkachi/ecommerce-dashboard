@@ -11,6 +11,7 @@ import Product from './ecommerce/components/Product';
 import Cart from './ecommerce/components/Cart';
 import About from './ecommerce/components/About';
 import Contact from './ecommerce/components/Contact';
+import Checkout from './ecommerce/components/Checkout';
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
        <Route path="/cart" element={<Cart />} />
        <Route path="/about" element={<About />} />
        <Route path="/contact" element={<Contact />} />
-       <Route path="/contact" element={<Checkout />} />
+       <Route path="/checkout" element={<Checkout />} />
        <Route path="*" element={<ErrorPage />} />
      </Routes>
     </div>

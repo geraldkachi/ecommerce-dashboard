@@ -1,7 +1,7 @@
 const cart: any = [];
 
 const handleCart = (state = cart, action: any) => {
-    const product: any = action.product
+    // const product: any = action.product
     switch (action) {
         case "ADDITEM":
             return [...state, action.payload]
