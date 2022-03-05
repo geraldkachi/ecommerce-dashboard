@@ -51,7 +51,7 @@ const Navbar = () => {
 								<i className="fa fa-sign-in">Login</i>
 							</NavLink> */}
 							<Login />
-							<NavLink to="/register" className="btn btn-outline-dark ms-2">
+							<NavLink to="/" className="btn btn-outline-dark ms-2">
 								<i className="fa fa-user-plus me-2"></i> Register
 							</NavLink>
 							<NavLink to="/cart" className="btn btn-outline-dark ms-2">

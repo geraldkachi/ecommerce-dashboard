@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import Modal, { Button } from './Modal/Modal'
 
 const Login = () => {
     const [modal, setModal]=useState(false)
@@ -6,9 +7,32 @@ const Login = () => {
     return (
         <div>
             {/* <!-- Button trigger modal --> */}
-            <button type="button" onClick={() => setModal(true)} className="btn btn-outline-dark ms-2 mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <Button type="button" onClick={() => setModal(true)} className="btn btn-outline-dark ms-2 mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <i className="fa fa-sign-in me-2"></i>Login
-            </button>
+            </Button>
+            <>
+            {/* <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+                <Button onClick={() => setModal(true)}>Open Modal</Button>
+            </div> */}
+            <Modal show={modal} onClose={() => setModal(false)}>
+                <div className="content">
+                    <img src="https://cdn.pixabay.com/photo/2015/01/09/11/11/office-594132__340.jpg" alt="Developer" />
+                    <div className="text">
+                        <h2>John Doe</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquid placeat omnis
+                            adipisci dolores quae amet mollitia sint, temporibus eum magnam facilis odio ex incidunt?
+                            Deleniti quam et rem obcaecati. Laborum atque odit expedita nulla.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita labore laborum, assumenda
+                            dolorum provident quod itaque earum, officia in placeat dignissimos nostrum? Totam corrupti
+                            nihil repudiandae ducimus atque quod eos!
+                        </p>
+                    </div>
+                </div>
+            </Modal>
+            </>
 
             {/* <!-- Modal --> */}
 

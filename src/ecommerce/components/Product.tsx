@@ -21,7 +21,6 @@ const Product = () => {
             const response = await fetch(`https://fakestoreapi.com/products/${id}`);
             setProduct(await response.json())
             setLoading(false)
-            console.log(product, "productproductproductproduct")
         }
         getProducts()
     }, [])

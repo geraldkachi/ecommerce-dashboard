@@ -7,7 +7,6 @@ import { deleteCart } from '../redux/actions'
 
 const Cart = () => {
     const state = useSelector((state: any) => state.handleCart)
-    console.log(state, "statestatestatestatestatestatestatestatestate")
     const dispatch = useDispatch()
 
     // const [product, setProduct] = useState<any>([])
@@ -76,7 +75,7 @@ const Cart = () => {
 
     return (
         <>
-            {state.length !== 0 && emptyCart()}
+            {state.length === 0 && emptyCart()}
             {state.length !== 0 && state.map(cartItems)}
             {state.length !== 0 && Button()}
         </>

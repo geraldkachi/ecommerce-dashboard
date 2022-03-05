@@ -12,21 +12,33 @@ import Cart from './ecommerce/components/Cart';
 import About from './ecommerce/components/About';
 import Contact from './ecommerce/components/Contact';
 import Checkout from './ecommerce/components/Checkout';
+import Dashboard from './ecomemerce-admin/pages/Dashboard';
+import MainLayout from './ecomemerce-admin/Layout/MainLayout';
 
 function App() {
   return (
     <div className="">
-     <Routes>
-       {/* <Route path="/" element={<CrudApp />} /> */}
-       <Route path="/" element={<EcommerceApp />} />
-       <Route path="/products" element={<Products />} />
-       <Route path="/products/:id" element={<Product />} />
-       <Route path="/cart" element={<Cart />} />
-       <Route path="/about" element={<About />} />
-       <Route path="/contact" element={<Contact />} />
-       <Route path="/checkout" element={<Checkout />} />
-       <Route path="*" element={<ErrorPage />} />
-     </Routes>
+      <Routes>
+        {/* <Route path="/" element={<CrudApp />} /> */}
+        <Route path="/" element={<EcommerceApp />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/products/:id" element={<Product />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="*" element={<ErrorPage />} />
+
+
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<Dashboard />} />
+          <Route path="orders" element={<Blank />} />
+          <Route path="products" element={<Blank />} />
+          <Route path="customers" element={<Blank />} />
+          <Route path="settings" element={<Blank />} />
+          <Route path="stats" element={<Blank />} />
+        </Route>
+      </Routes>
     </div>
   );
 }
