@@ -38,6 +38,7 @@ function App() {
           <Route path="settings" element={<Blank />} />
           <Route path="stats" element={<Blank />} />
         </Route>
+        
       </Routes>
     </div>
   );
