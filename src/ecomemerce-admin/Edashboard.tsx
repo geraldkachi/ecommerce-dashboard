@@ -1,10 +1,23 @@
 import React from 'react'
+import { Route, Routes } from 'react-router'
 import './assets/libs/boxicons-2.1.1/css/boxicons.min.css'
-import './scss/App.scss'
+import MainLayout from './Layout/MainLayout'
+import Blank from './pages/Blank'
+import Dashboard from './pages/Dashboard'
+import '../ecomemerce-admin/scss/App.scss'
 
 const Edashboard = () => {
   return (
-    <div>Edashboard</div>
+    <>
+        <Route path="/" element={<MainLayout />}>
+            <Route index element={<Dashboard />} />
+            <Route path="orders" element={<Blank />} />
+            <Route path="products" element={<Blank />} />
+            <Route path="customers" element={<Blank />} />
+            <Route path="settings" element={<Blank />} />
+            <Route path="stats" element={<Blank />} />
+          </Route>
+    </>
   )
 }
 

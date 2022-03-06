@@ -1,7 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
-import './App.css';
+// import './App.css';
 import { Route, Routes } from 'react-router';
 import CrudApp from "./CrudApp/CrudApp"
 import ErrorPage from './ErrorPage';
@@ -14,13 +13,18 @@ import Contact from './ecommerce/components/Contact';
 import Checkout from './ecommerce/components/Checkout';
 import Dashboard from './ecomemerce-admin/pages/Dashboard';
 import MainLayout from './ecomemerce-admin/Layout/MainLayout';
+import Blank from './ecomemerce-admin/pages/Blank';
+// import Edashboard from './ecomemerce-admin/Edashboard';
+
+import "./ecomemerce-admin/assets/libs/boxicons-2.1.1/css/boxicons.min.css"
+import './ecomemerce-admin/scss/App.scss'
 
 function App() {
   return (
     <div className="">
       <Routes>
         {/* <Route path="/" element={<CrudApp />} /> */}
-        <Route path="/" element={<EcommerceApp />} />
+        <Route path="/ecommerce" element={<EcommerceApp />} />
         <Route path="/products" element={<Products />} />
         <Route path="/products/:id" element={<Product />} />
         <Route path="/cart" element={<Cart />} />
@@ -33,7 +37,7 @@ function App() {
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Dashboard />} />
           <Route path="orders" element={<Blank />} />
-          <Route path="products" element={<Blank />} />
+          <Route path="product" element={<Blank />} />
           <Route path="customers" element={<Blank />} />
           <Route path="settings" element={<Blank />} />
           <Route path="stats" element={<Blank />} />

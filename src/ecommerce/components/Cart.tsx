@@ -1,6 +1,5 @@
-import produce from 'immer'
-import React, { useState, useEffect } from 'react'
-import Skeleton from 'react-loading-skeleton'
+// import React, { useState, useEffect } from 'react'
+// import Skeleton from 'react-loading-skeleton'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { deleteCart } from '../redux/actions'
@@ -25,16 +24,16 @@ const Cart = () => {
     //     getProducts()
     // }, [])
 
-    const Loading = () => <>
-        <div className="col-md-12 pb-5">
-            <Skeleton height={400} />
-        </div>
-    </>
+    // const Loading = () => <>
+    //     <div className="col-md-12 pb-5">
+    //         <Skeleton height={400} />
+    //     </div>
+    // </>
 
     const handleClose = (item: any) => dispatch(deleteCart(item))
 
 
-    const handleButton = (product: any) => dispatch((product))
+    // const handleButton = (product: any) => dispatch((product))
 
     const cartItems = (cartItem: any) => {
         <div className="px-4 my-5 bg-light rounded-3">

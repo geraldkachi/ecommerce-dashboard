@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Skeleton from 'react-loading-skeleton'
 import { useDispatch } from 'react-redux'
-import { NavLink, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { addCart, deleteCart } from '../redux/actions'
 import Navbar from './Navbar/Navbar'
 
@@ -58,7 +58,7 @@ const Product = () => {
             <div className="col-md-6 my-3">
                 <h4 className="text-uppercase text-black-50">{product.category}</h4>
                 <h1 className="display-5">{product.title}</h1>
-                <p className="lead fw-bolder">Rating {product.rating && product.rating.rate}<i className="fa fa-star"></i></p>                
+                <p className="lead fw-bolder">Rating {product.rating && product.rating.rate}<i className="fa fa-star"></i></p>
                 <h3 className="display-6 fw-bold my-4">$ {product.price}</h3>
                 <p className="lead">{product.description}</p>
                 <button onClick={() => handleCart(product)} className="btn btn-outline-dark px-4 py-2">Add to Cart</button>

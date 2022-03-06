@@ -3,7 +3,7 @@ import Modal, { Button } from './Modal/Modal'
 
 const Login = () => {
     const [modal, setModal]=useState(false)
-    const closeModal =() => setModal(false)
+    // const closeModal =() => setModal(false)
     return (
         <div>
             {/* <!-- Button trigger modal --> */}

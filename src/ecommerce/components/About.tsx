@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Navbar from './Navbar/Navbar'
 
 const About = () => {
   return (
     <div>
+        <Navbar />
         <div className="container my-5">
             <div className="row">
                 <div className="col-md-6">

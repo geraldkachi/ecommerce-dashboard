@@ -2,20 +2,20 @@ import React, { useEffect, useState } from 'react'
 import Skeleton from 'react-loading-skeleton'
 import { NavLink } from 'react-router-dom'
 
-interface ProductDatatype {
-    product: {
-        image: TexImageSource
-    }
-}
+// interface ProductDatatype {
+//     product: {
+//         image: TexImageSource
+//     }
+// }
 
 const Products = () => {
     const [data, setData] = useState([])
     const [filter, setFilter] = useState(data)
     const [loading, setLoading] = useState(false)
 
-    let componentMounted = true
-
+    
     useEffect(() => {
+        let componentMounted = true
         const getProducts = async () => {
             setLoading(true)
             const response = await fetch("https://fakestoreapi.com/products?limit=5'")
@@ -53,7 +53,7 @@ const Products = () => {
 
     const ShowProducts = () => (
         <>
-            <div className="buttons d-flex justify-content-center align-items-center mb-5 pb-5">
+            <div className="buttons justify-content-center align-items-center mb-5 pb-5 mx-auto">
                 <button className="btn btn-outline-dark me-2" onClick={() => setFilter(data)}>All</button>
                 <button className="btn btn-outline-dark me-2" onClick={()=> filterProduct("men's clothing")}>Men's Clothing</button>
                 <button className="btn btn-outline-dark me-2" onClick={()=> filterProduct("women's clothing")}>Women's Clothing</button>
