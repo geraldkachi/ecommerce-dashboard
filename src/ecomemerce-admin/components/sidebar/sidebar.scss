@@ -5,7 +5,8 @@
     @include flex(stretch, flex-start);
     flex-direction: column;
     color: $txtColor;
-    width: $sideBarWidth;
+    min-width: 220px;
+    // width: $sideBarWidth;
     background-color: $mainBg;
     height: 100vh;
     position: fixed;
@@ -59,8 +60,8 @@
         &__item {
             @include flex(center, flex-start);
             position: relative;
-            margin-bottom: 2rem;
-            padding-left: 20%;
+            margin-bottom: 1rem;
+            padding-left: 10%;
             transition: color 0.3s ease-in-out;
             text-decoration: none;
             color: $txtColor;
@@ -106,7 +107,7 @@
                 --size: 40px;
                 width: var(--size);
                 height: var(--size);
-                margin-right: 3rem;
+                margin-right: 1.5rem;
                 @include flex(center, center);
 
                 @include tablet {
@@ -126,8 +127,8 @@
     }
 }
 
-@media screen and (max-width: 400px) {
-    .sidebar__menu__item__txt{
+@media screen and (max-width: 600px) {
+    .sidebar__menu__item__txt, .sidebar__menu__item__icon{
         color: white !important;
     }
 }

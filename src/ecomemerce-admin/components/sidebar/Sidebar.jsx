@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import './sidebar.scss'
 import { Link, useLocation } from 'react-router-dom'
 import { images } from '../../constants'
@@ -32,18 +32,17 @@ const Sidebar = () => {
                 </div>
             </div>
             <div className="sidebar__menu">
-                {
-                    sidebarNav.map((nav, index) => (
-                        <Link to={nav.link} key={`nav-${index}`} className={`sidebar__menu__item ${activeIndex === index && 'active'}`} onClick={closeSidebar}>
-                            <div className="sidebar__menu__item__icon">
-                                {nav.icon}
-                            </div>
-                            <div className="sidebar__menu__item__txt">
-                                {nav.text}
-                            </div>
-                        </Link>
-                    ))
-                }
+                {sidebarNav.map((nav, index) => (
+                    <Link to={nav.link} key={`nav-${index}`} className={`sidebar__menu__item ${activeIndex === index && 'active'}`} onClick={closeSidebar}>
+                        <div className="sidebar__menu__item__icon">
+                            {nav.icon}
+                        </div>
+                        <div className="sidebar__menu__item__txt">
+                            {nav.text}
+                        </div>
+                    </Link>
+                ))}
+                
                 <Link to="/ecommerce" className="sidebar__menu__item">
                     <div className="sidebar__menu__item__icon">
                         <i className='bx bx-log-out'></i>
