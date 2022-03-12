@@ -1,8 +1,4 @@
-import React from 'react';
-import { Counter } from './features/counter/Counter';
-// import './App.css';
 import { Route, Routes } from 'react-router';
-import CrudApp from "./CrudApp/CrudApp"
 import ErrorPage from './ErrorPage';
 import EcommerceApp from './ecommerce/EcommerceApp';
 import Products from './ecommerce/components/Products';
@@ -14,7 +10,6 @@ import Checkout from './ecommerce/components/Checkout';
 import Dashboard from './ecomemerce-admin/pages/Dashboard';
 import MainLayout from './ecomemerce-admin/Layout/MainLayout';
 import Blank from './ecomemerce-admin/pages/Blank';
-// import Edashboard from './ecomemerce-admin/Edashboard';
 
 import "./ecomemerce-admin/assets/libs/boxicons-2.1.1/css/boxicons.min.css"
 import './ecomemerce-admin/scss/App.scss'
@@ -23,7 +18,6 @@ function App() {
   return (
     <div className="">
       <Routes>
-        {/* <Route path="/" element={<CrudApp />} /> */}
         <Route path="/ecommerce" element={<EcommerceApp />} />
         <Route path="/products" element={<Products />} />
         <Route path="/products/:id" element={<Product />} />
