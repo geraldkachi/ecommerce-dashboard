@@ -29,8 +29,9 @@
     overflow-x: hidden;
     position: relative;
     display: block;
-    width: 60vw;
+    width: 70%;
     height: 60%;
+    overflow: hidden;
     min-height: 400px;
     min-width: 400px;
     margin: 0 auto;

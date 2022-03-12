@@ -16,7 +16,7 @@ import {
 } from 'chart.js'
 import OverallList from '../components/overall-list/OverallList'
 import RevenueList from '../components/revenue-list/RevenueList'
-import '../scss/App.scss'
+// import './scss/App.scss'
 
 
 ChartJS.register(
