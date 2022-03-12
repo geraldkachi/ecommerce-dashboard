@@ -4,10 +4,10 @@
 .row-on {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 math.div($spacing, 2) * -1;
+    margin: 0 math.div($spacing, 2) * -3;
 
     @include tablet {
-        margin: 0 math.div($mobileSpacing, 2) * -1;
+        margin: 0 math.div($mobileSpacing, 2) * -3;
     }
 }
 

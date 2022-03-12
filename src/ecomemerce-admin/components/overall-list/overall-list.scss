@@ -8,18 +8,20 @@
 
     &__item {
         @include flex(center, flex-start);
+        font-size: 1rem;
 
         &__icon {
             @include flex();
-            --size: 50px;
-            width: var(--size);
+            --size: 30px;
+            // --size: 60px;
+            // width: var(--size);
             height: var(--size);
             border-radius: 50%;
             background-color: $bodyBg;
             margin-right: $spacing;
 
             i {
-                font-size: 1.9rem;
+                font-size: 1.5rem;
                 color: $black;
             }
         }

@@ -1,4 +1,3 @@
-import React from 'react'
 import './dashboard-wrapper.scss'
 
 const DashboardWrapper = props => {
