@@ -32,4 +32,9 @@
     border-bottom-left-radius: 30px;
     transform: scale(0.8) translateX(50%);
     transition: all 0.5s ease-in-out;
+       
+    @media screen and (max-width: 700px) {
+        transform: scale(0.8) translateX(50%);
+        transition: all 0.5s ease-in-out;
+    }
 }
