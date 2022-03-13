@@ -1,7 +1,8 @@
 @use '../scss/abstracts/'as *;
 
 .main {
-    padding-left: $sideBarWidth;
+    padding-left: 200px;
+    // padding-left: $sideBarWidth;
     overflow-x: hidden;
     background-color: #ff1a;
 
