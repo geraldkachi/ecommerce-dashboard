@@ -68,6 +68,7 @@
 
             @include tablet {
                 padding-left: $mobileSpacing;
+                color: white;
             }
 
             &:hover {
@@ -127,8 +128,9 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
     .sidebar__menu__item__txt, .sidebar__menu__item__icon{
-        color: white !important;
+        // color: white !important;
+        
     }
 }
