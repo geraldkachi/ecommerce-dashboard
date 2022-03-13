@@ -23,7 +23,7 @@ const Product = () => {
             setLoading(false)
         }
         getProducts()
-    }, [])
+    }, [id])
 
     const Loading = () => <>
         <div className="col-md-6 pb-5">

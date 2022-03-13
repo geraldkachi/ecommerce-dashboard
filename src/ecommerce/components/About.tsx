@@ -16,7 +16,7 @@ const About = () => {
                     <Link to="/contact" className="btn btn-outline-dark me-3 px-3">Contact Us</Link>
                 </div>
                 <div className="col-md-6 d-flex justify-content-center">
-                    <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg" alt="image" height="400px" width="400pc" />
+                    <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg" alt="about" height="400px" width="400pc" />
                 </div>
             </div>
         </div>

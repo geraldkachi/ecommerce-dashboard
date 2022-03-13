@@ -5,7 +5,7 @@ const UserInfo = ({ user }) => {
     return (
         <div className='user-info'>
             <div className="user-info__img">
-                <img src={user.img} alt="image" height="100%" width="100%" />
+                <img src={user.img} alt="userinfo" height="100%" width="100%" />
             </div>
             <div className="user-info__name">
                 <span>{user.name}</span>
